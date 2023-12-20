@@ -19,4 +19,4 @@ Welcome to the codsoft project repository! This project showcases a landing page
 
 ### Link
    ```bash
-   git clone https://github.com/karthickssp/codsoft.git
+   https://github.com/karthickssp/codsoft
