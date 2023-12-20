@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  height: 100vh;
+  width: 100%;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.head-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 600;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.calculator-container {
+  width: 340px;
+  border-radius: 16px;
+  background: #323030;
+}
+.display-screen {
+  display: flex;
+  text-align: right;
+  width: 320px;
+  padding: 24px;
+  margin: 10px;
+  border-radius: 16px;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  pointer-events: none;
+}
+button {
+  background: #fff;
+  font-family: monospace;
+  font-weight: bold;
+  width: 60px;
+  height: 60px;
+  border-radius: 25%;
+  margin: 9px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+button:active {
+  transform: scale(0.9); 
+}
+#clear {
+  background-color: rgb(172, 57, 57);
+  color: #fff;
+}
+.button-operator {
+  background: #ccc;
+}
+
+.button-equal {
+  background: #00c853;
+}
+
+.history-container {
+  width: 340px;
+  height: 510px;
+  border-radius: 16px;
+  font-size: 1.1em;
+  background: #fff;
+  overflow-y: scroll;
+}
+.history-head {
+  display: flex;
+}
+.history-container h3 {
+  text-align: start;
+  font-size: 1.2em;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 20px;
+}
+.history-container h4 {
+  font-size: 1em;
+  font-size: 20px;
+  font-weight: 450;
+  padding-top: 35px;
+  margin-left: 30%;
+  cursor: pointer;
+}
+.history-container p {
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-left: 20px;
+  color: #45cc3c;
+}
+.history-container p:last-child {
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-left: 20px;
+  color: blue;
+}
+@media screen and (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .calculator-container {
+    margin-bottom: 20px;
+  }
+}

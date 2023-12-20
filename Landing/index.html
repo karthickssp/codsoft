@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="assert/tabicon.jpg" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Perfect Garden</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-section">
+      <div class="header-logo">PERFECTGARDEN</div>
+      <div class="navbar-icon">
+        <i class="fa fa-bars"></i>
+      </div>
+      <nav class="navbar-head">
+        <a href="#home">Home</a>
+        <a href="#explore">Explore</a>
+        <a href="#guide">Guide</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+
+    <section id="home">
+      <div class="home-section">
+        <div class="image-content">
+          <img src="assert/home.jpg" alt="Perfect Garden" />
+        </div>
+        <div class="description">
+          <h1>Welcome to PerfectGarden!</h1>
+          <p>
+            We provide a wide range of gardening solutions for all enthusiasts.
+            Discover our hand-picked selection of premium plants and tools
+            crafted to elevate your gardening experience and create stunning
+            outdoor spaces.
+          </p>
+          <a href="#explore"><button>Explore</button></a>
+        </div>
+      </div>
+      <div class="sub-head">
+        <h1>
+          The complete guide to growing food in your own backyard
+        </h1>
+        <h2>Suitable for gardeners worldwide</h2>
+      </div>
+      <div>
+        <div class="home-row">
+          <img src="assert/bee.png" alt="Organic" />
+          <h3>Organic Gardening</h3>
+          <p>
+            How to grow and maintain your own organic garden
+          </p>
+        </div>
+        <div class="home-row">
+          <img src="assert/notes.png" alt="Guides" />
+          <h3>Growing Guides</h3>
+          <p>
+            Grow a variety of foods with our fuss-free growing guides
+          </p>
+        </div>
+        <div class="home-row">
+          <img src="assert/question.png" alt="Troubleshooting" />
+          <h3>Troubleshooting</h3>
+          <p>
+            Troubleshoot pests and diseases by using our handy charts and
+            guides
+          </p>
+        </div>
+      </div>
+    </section>
+    <br />
+    <section id="explore" class="explore-section">
+      <div class="explore-container">
+        <div class="plant-container">
+          <img src="assert/apple.jpg" alt="Apple">
+          <div class="middle">
+            <button onclick="showPopup('popup1')" class="text">Apple</button>
+          </div>
+        </div>
+        <div class="plant-container">
+          <img src="assert/orange.jpg" alt="Orange">
+          <div class="middle">
+            <button onclick="showPopup('popup2')" class="text">Orange</button>
+          </div>
+        </div>
+        <div class="plant-container">
+          <img src="assert/papaya.jpg" alt="papaya">
+          <div class="middle">
+            <button onclick="showPopup('popup3')" class="text">Papaya</button>
+          </div>
+        </div>
+        <div class="plant-container">
+          <img src="assert/tomato.jpg" alt="Tomato">
+          <div class="middle">
+            <button onclick="showPopup('popup4')" class="text">Tomato</button>
+          </div>
+        </div>
+        <div class="plant-container">
+          <img src="assert/rose.jpg" alt="Rose">
+          <div class="middle">
+            <button onclick="showPopup('popup5')" class="text">Rose</button>
+          </div>
+        </div>
+        <div class="plant-container">
+          <img src="assert/carrot.jpg" alt="Carrot">
+          <div class="middle">
+            <button onclick="showPopup('popup6')" class="text">Carrot</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="popup1" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup('popup1')">&times;</span>
+          <h2>Apple</h2>
+          <h3>Family: Rosaceae</h3>
+          <h3>Genus: Malus</h3>
+          <h3>Species: M. domestica</h3>
+          <h3>Kingdom: Plantae</h3>
+          <p>An apple is a round, edible fruit produced by an apple tree Apple trees are cultivated worldwide and are
+            the most widely grown species in the genus Malus.</p>
+        </div>
+      </div>
+      <div id="popup2" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup('popup2')">&times;</span>
+          <h2>Orange</h2>
+          <h3>Family: Rutaceae</h3>
+          <h3>Genus: Citrus</h3>
+          <h3>Species: Citrus × sinensis</h3>
+          <h3>Kingdom: Plantae</h3>
+          <p>A hybrid between pomelo and mandarin, also known as the sweet oranges, is a commonly cultivated species of
+            orange that includes Valencia oranges, blood oranges and navel oranges.</p>
+        </div>
+      </div>
+      <div id="popup3" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup('popup3')">&times;</span>
+          <h2>Papaya</h2>
+          <h3>Family: Caricaceae</h3>
+          <h3>Genus: Carica</h3>
+          <h3>Species: C. papaya</h3>
+          <h3>Kingdom: Plantae</h3>
+          <p>The papaya is a small, sparsely branched tree, usually with a single stem growing from 5 to 10 m (16 to 33
+            ft) tall, with spirally arranged leaves confined to the top of the trunk.</p>
+        </div>
+      </div>
+      <div id="popup4" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup('popup4')">&times;</span>
+          <h2>Tomato</h2>
+          <h3>Family: Solanaceae</h3>
+          <h3>Genus: Solanum</h3>
+          <h3>Species: S. lycopersicum</h3>
+          <h3>Kingdom: Plantae</h3>
+          <p>The tomato is the edible berry of the plant Solanum lycopersicum, commonly known as the tomato plant. The
+            species originated in western South America, Mexico, and Central America. The Nahuatl word tomatl gave rise
+            to the Spanish word tomate, from which the English word tomato derived</p>
+        </div>
+      </div>
+      <div id="popup5" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup('popup5')">&times;</span>
+          <h2>Rose</h2>
+          <h3>Family: Rosaceae</h3>
+          <h3>Genus: Rosa</h3>
+          <h3>Species: Rosa</h3>
+          <h3>Kingdom: Plantae</h3>
+          <p>A rose is either a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower
+            it bears. There are over three hundred species and tens of thousands of cultivars.</p>
+        </div>
+      </div>
+      <div id="popup6" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup('popup6')">&times;</span>
+          <h2>Carrot</h2>
+          <h3>Family: Apiaceae</h3>
+          <h3>Genus: Daucus</h3>
+          <h3>Species: D. carota</h3>
+          <h3>Kingdom: Plantae</h3>
+          <p>The carrot is a biennial plant in the umbellifer family, Apiaceae. At birth, it grows a rosette of leaves
+            while building up the enlarged taproot. </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="guide">
+      <div class="guide-section">
+        <h1>Guide</h1>
+        <p>
+          Building an Edible Garden Building a garden is a very rewarding
+          experience and edible gardens in particular are a point of pride to most
+          gardeners. Edible gardens can be designed to suit any style or ability
+          and should always be designed in a way that is practical for the users.
+          If you are new to vegetable gardening, start small and focus on growing
+          a handful of crops. Visit our Growing Guides and select the Easy To
+          Grow option for more information. A small raised bed is the perfect way
+          to get started as it is easy to set up and maintain. Most raised beds
+          can be purchased from your local hardware store or nursery and come in
+          flat packs, with pieces that slot together without the use of any tools.
+          Once you have the hang of gardening, you can expand your growing space
+          by adding more raised beds or by starting an in-ground garden. If you
+          have a small space to work with, then try container gardening, see our
+          Small Scale Gardening blog in the Kitchen & Garden section for more
+          information. Site selection is another important consideration as most
+          edible crops require a minimum of six to eight hours of sunlight each
+          day in order to crop well. A full sun position is particularly important
+          for fruiting crops such as eggplant, tomatoes, cucumbers, peppers and
+          squash varieties. If your garden is on the shady side, there is still
+          plenty you can grow including a large range of herbs and leafy greens!
+          Visit our Growing Guides and select the Shade Tolerant option for
+          more information
+        </p>
+      </div>
+      <div class="guide-container">
+        <div class="guide-image">
+          <img src="assert/guide1.jpg" alt="guide1" />
+        </div>
+        <div class="guide-image">
+          <img src="assert/guide2.jpg" alt="guide2" />
+        </div>
+        <div class="guide-image">
+          <img src="assert/guide3.jpg" alt="guide3" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about-container">
+        <h1>About Us!</h1>
+        <p>
+          Thank you for taking the time to explore this page.
+        </p>
+        <p>
+          Here at The PerfectGarden, Our aim to provide you with the
+          confidence and inspiration to create your very own edible garden.
+        </p>
+        <p>
+          On this page you will find fuss-free, easy to read guides on how to
+          create and maintain your edible garden, everything from preparing
+          your soil to harvesting your food.
+        </p>
+        <p>
+          In addition, there are over 100 growing guides on an extensive range
+          of fruits, vegetables, and herbs. I have worked hard to ensure that
+          these growing guides are comprehensive, yet succinct and easy to
+          follow. There is something for everyone, no matter the size or
+          location of your growing space.
+        </p>
+        <p>
+          The Kitchen and Garden section is updated weekly and features
+          interesting garden hacks and advice, as well as creative ways to
+          prepare your produce.
+        </p>
+        <p>
+          The Pest, Disease & Beneficial Insects guides are effective tools to
+          help you troubleshoot issues as they arise.
+        </p>
+        <p>
+          If you have read the guides and still have some unanswered questions
+          or find yourself needing a little guidance along the way, the handy
+          Ask a Question feature is here to help. I will do my very best to
+          address any of your queries or concerns.
+        </p>
+        <p>
+          Everyone should have the opportunity to grow food, even if its
+          something as small as harvesting a sprig of parsley from your very
+          own garden to bring to your table.
+        </p>
+        <p>
+          I hope that you enjoy this website and look forward to helping you
+          grow your love for gardening!
+        </p>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="faq-container">
+        <h1>FAQ</h1>
+        <div class="faq-item">
+          <div class="faq-question">What is home gardening?</div>
+          <div class="faq-answer">
+            Home gardening refers to the practice of growing
+            <strong>plants, vegetables, herbs, or flowers </strong>in and around
+            your home. It can be done in a backyard, on a balcony, or even indoors.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">What are the benefits of home gardening?</div>
+          <div class="faq-answer">
+            Home gardening offers several benefits, including access to fresh
+            and organic produce, reduced grocery bills, improved mental
+            well-being, and a connection with nature.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">How do I start a home garden?</div>
+          <div class="faq-answer">
+            To start a home garden, begin by selecting a suitable location,
+            preparing the soil, choosing the right plants, and providing proper
+            care through watering, fertilizing, and regular maintenance.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Can I garden in a small space or apartment?</div>
+          <div class="faq-answer">
+            <strong>Yes</strong>, you can garden in small spaces or apartments
+            by using containers, vertical gardening techniques, or choosing
+            compact plant varieties that are well-suited for limited space.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">How often should I water my plants?</div>
+          <div class="faq-answer">
+            The frequency of watering depends on the type of plants and
+            environmental conditions. It's best to water when the soil feels dry
+            to the touch. Overwatering can be as harmful as underwatering.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">How can I make my garden more eco-friendly?</div>
+          <div class="faq-answer">
+            You can make your garden more eco-friendly by using organic
+            gardening practices, conserving water, choosing native plants, and
+            avoiding chemical pesticides and fertilizers.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div id="contact" class="contact-section">
+        <div class="contact-form">
+          <h2 class="contact-text">Get In Touch</h2>
+          <form>
+            <input type="text" placeholder="Full Name...">
+            <input type="text" placeholder="Full Email Id...">
+            <input type="text" placeholder="Full Mobile No...">
+            <textarea placeholder="Enter Message..."></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div>
+        <div class="contact-detail">
+          <h3>
+            <i class="fa fa-map-marker"></i>
+          </h3>
+          <h4>Address</h4>
+          <p>123, Attur, Salem-654321.</p>
+        </div>
+        <div class="contact-detail">
+          <h3>
+            <i class="fa fa-phone"></i>
+          </h3>
+          <h4>Phone</h4>
+          <p>+91 98765-43210</p>
+        </div>
+        <div class="contact-detail">
+          <h3>
+            <i class="fa fa-envelope-o"></i>
+          </h3>
+          <h4>Email</h4>
+          <p>abcdefgh00@gmail.com</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-section">
+      <div class="footer-content">
+        <a href="https://www.facebook.com/" target="_blank">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="https://www.x.com/" target="_blank">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <i class="fa fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+    <div class="footer-end">CopyRight &copy; 2023 PerfectGarden. All Rights Reserved
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
