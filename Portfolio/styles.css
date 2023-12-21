@@ -19,6 +19,7 @@ html, body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .header-logo {
+  font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: 600;
   color: #4fff4d;
@@ -26,7 +27,9 @@ html, body {
 .navbar-head {
   display: flex;
   list-style: none;
+  transition: display 0.3s ease;
 }
+
 .navbar-head a {
   color: #000;
   text-decoration: none;
@@ -37,6 +40,13 @@ html, body {
 .navbar-head a:hover {
   color: #4fff4d;
   border-bottom: 3px solid #4fff4d;
+}
+.navbar-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 5px;
 }
 .profile-section {
   display: flex;
@@ -331,7 +341,6 @@ textarea:focus {
 }
 @media screen and (max-width: 768px) {
   .header-section {
-    flex-direction: column;
     text-align: center;
   }
   .header-logo {
@@ -341,8 +350,23 @@ textarea:focus {
     flex-direction: column;
     display: none;
   }
+  .navbar-icon {
+    display: block;
+  }
+  .navbar-head.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+  }
   .navbar-head a {
     margin: 5px 0;
+    font-size: 1.5rem;
+    text-align: center;
   }
   .profile-section {
     padding-top: 120px;
