@@ -1,0 +1,15 @@
+:root{
+    --primary : #f05537;
+    --secondary : #d1410c;
+    --mainColor: #64bcf4;
+    --hoverColor: #5bacdf;
+    --backgroundColor: #ffffff;
+    --darkOne: #312f3a;
+    --darkTwo: #45424b;
+    --lightOne: #919191;
+    --lightTwo: #aaa;
+    --dark-grey: #AAAAAA;
+    --dark: #363949;
+    --warning: #Fbc02d;
+    --text-color: #121212;
+}
